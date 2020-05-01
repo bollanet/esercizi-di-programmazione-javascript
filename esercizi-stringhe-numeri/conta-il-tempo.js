@@ -12,4 +12,14 @@
 
   http://www.imparareaprogrammare.it
 */
-var time = 0;
+var inputSeconds = 12560;
+
+var timeHour = 1;
+var timeMinutes = 60;
+var timeSeconds = 3600;
+
+var hour = Math.round(inputSeconds/timeSeconds-0.5);
+var minutes = Math.round(inputSeconds/timeMinutes-0.5)-(hour*timeMinutes);
+var seconds = Math.round(-hour*timeSeconds)+(-minutes*timeMinutes)+inputSeconds;
+
+console.log(`${hour} ore, ${minutes} minuti e ${seconds} secondi.`);
