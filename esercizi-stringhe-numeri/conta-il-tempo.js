@@ -12,6 +12,7 @@
 
   http://www.imparareaprogrammare.it
 */
+
 var inputSeconds = 12560;
 
 var timeHour = 1;
