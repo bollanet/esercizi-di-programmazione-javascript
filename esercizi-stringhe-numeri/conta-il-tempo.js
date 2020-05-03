@@ -15,12 +15,8 @@
 
 var inputSeconds = 12560;
 
-var timeHour = 1;
-var timeMinutes = 60;
-var timeSeconds = 3600;
-
-var hour = Math.round(inputSeconds/timeSeconds-0.5);
-var minutes = Math.round(inputSeconds/timeMinutes-0.5)-(hour*timeMinutes);
-var seconds = Math.round(-hour*timeSeconds)+(-minutes*timeMinutes)+inputSeconds;
+var hour = Math.round(inputSeconds/3600-0.5);
+var minutes = Math.round(inputSeconds/60-0.5)-(hour*60);
+var seconds = Math.round(-hour*3600)+(-minutes*60)+inputSeconds;
 
 console.log(`${hour} ore, ${minutes} minuti e ${seconds} secondi.`);

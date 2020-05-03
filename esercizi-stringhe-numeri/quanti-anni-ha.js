@@ -11,3 +11,11 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var currentYear = 2020;
+var inputBirthyear = 1974;
+
+var outputBirthyears = (currentYear-inputBirthyear);
+var upto100 = 100-outputBirthyears;
+
+console.log(`L'età della persona è ${outputBirthyears} e sono necessari ${upto100} anni per raggiugere i 100.`); 
